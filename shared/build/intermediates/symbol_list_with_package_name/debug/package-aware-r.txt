@@ -1,2 +1,0 @@
-com.auto.deezomatic.shared
-xml automotive_app_desc

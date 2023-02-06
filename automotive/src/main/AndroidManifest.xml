@@ -26,12 +26,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deezomatic">
-        <meta-data android:name="com.android.automotive"
-            android:resource="@xml/automotive_app_desc"/>
 
-        <activity android:name=".activities.DeezomaticMainActivity" android:exported="true"></activity>
+        <activity android:name=".activities.DeezomaticMainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <service
-            android:name="com.auto.deezomatic.shared.MyMusicService"
+            android:name="com.auto.deezomatic.mediaplayback.MusicService"
             android:enabled="true"
             tools:ignore="ExportedService"
             android:exported="true">

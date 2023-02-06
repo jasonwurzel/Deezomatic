@@ -13,6 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Deezomatic"
-include ':mobile'
 include ':automotive'
-include ':shared'
