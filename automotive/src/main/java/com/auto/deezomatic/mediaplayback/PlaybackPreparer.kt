@@ -4,7 +4,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.ResultReceiver
 import android.support.v4.media.session.PlaybackStateCompat
-import com.google.android.exoplayer2.ControlDispatcher
+//import com.google.android.exoplayer2.ControlDispatcher
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
 
@@ -14,7 +14,6 @@ class PlaybackPreparer(
 ) : MediaSessionConnector.PlaybackPreparer {
     override fun onCommand(
         player: Player,
-        controlDispatcher: ControlDispatcher,
         command: String,
         extras: Bundle?,
         cb: ResultReceiver?
